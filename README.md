@@ -23,3 +23,15 @@ The results are in JSON
    }
 ]
 ```
+
+To use as a Windows Service
+
+```
+sc create TEMPerService DisplayName="TEMPer Service" binPath="FULLPATH\Woz.TEMPerService.exe"
+
+sc start TEMPerService
+
+sc stop TEMPerService
+
+sc delete TEMPerService
+```

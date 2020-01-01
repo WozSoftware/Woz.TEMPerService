@@ -17,6 +17,7 @@ namespace Woz.TEMPerService.Models
             _sensorResult = sensorResult;
         }
 
+        public string MachineName => Environment.MachineName;
         public DateTime Date => DateTime.Now;
         public string SensorType => _sensorResult.SensorType.ToString();
         public string DeviceId => _sensorResult.DeviceId;
